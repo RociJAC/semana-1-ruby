@@ -1,51 +1,38 @@
-=begin =begin nested_array =[["Jhoselin"],
-["Cotrina"],
-["Atarama"]]
+words = ["hello", "world"]
 
-nested_array [2][9] =true
-
-puts nested_array
+puts words[1]
 
 
-first_array =[0,1,2]
-second_array =[2,3,4]
-puts first_array - second_array
-puts second_array - first_array
-p second_array - first_array
-p first_array & second_array
 
-p first_array *2
+puts words
+p words
 
-words = ["Casa","Marioneta", nil]
+words[8] = "hola"
+ p words
+
+p words[9]
+
+words.push("Rocio")
+p words
+# push permite agregar al final el .push() es con parentesis
+
+new_array =[
+    [0,1,2],
+    ["carla","rocio","alejandra"],
+    [false, true]
+]
+
+puts new_array [1][1]
+
+puts new_array [1].push(15)
+
+p new_array
+
+p words * 2
+
+# el & entre arrays es para elementos en comun
+
 p words.length
-
-p words.compact.sort
-
+words_without_nil = p words.compact.sort
+#compact quita todos los nils y el sort ordena alfabeticamente
 p words.rotate
-
-
-students = ["Luis", "Isy","Rocio"]
-students_downcase = students.map {|student| student.downcase}
-p students_downcase
-
-students = ["Luis", "Isy","Rocio"]
-students_upcase= []
-students.each {|student| students_upcase.push(student.upcase)}
-p students_upcase
-
-estudiante = nil
-
-value = ""
- puts value ? "Is true" : "Is false"
-=end
-
-car = {
-    "wheels" => 4,
-    "brand"  => "Renault",
-    "color"  => "Red"
-}
-
-p car
-puts car ["color"]
-car ["year"] = 2022
-p car
