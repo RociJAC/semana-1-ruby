@@ -3,7 +3,6 @@ words = ["hello", "world"]
 puts words[1]
 
 
-
 puts words
 p words
 
