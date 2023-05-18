@@ -40,16 +40,66 @@
 
 #go
 
-students = ["Luis", "Isy"]
-students.each {|student| puts student.downcase}
-students_downcase = students.each {|student| puts student.downcase}
-#sirve para recorrer no retorna un nuevo array
-p students
-p students_downcase = students.each {|student| puts student.downcase}
-# para que pase eso se tiene que asiganar una variable e imprimirla
+#students = ["LUIS", "ISY"]
+#students.each {|student| puts student.downcase}
 
-students2 = ["Luis", "Isy"]
-students_downcase2 = students.map {|student| puts student.downcase}
-p  students_downcase2
+#p students
+#p students_downcase 
+# para que pase eso se tiene que asiganar una variable e imprimirla
+#students_downcase = students.each {|student| puts student.downcase}
+#sirve para recorrer no retorna un nuevo array
+
+#students_downcasemap = students.map { |student| student.downcase}
+#p  students_downcasemap
 #sirve para recorrer si retorna un nuevo array
+
+#students2 = ["ROCIO", "CARLA"] 
+#students2_downcase = students2.map { |student| p student.downcase}
+#p students2
+#p students2_downcase
+
+# HASHEEES
+
+#puts "a symbol".object_id
+
+#puts :a_symbol.object_id
+
+
+#empty= Hash.new
+#empty = {}
+car = {
+    "wheels" => 4,
+    "brand" => "Renault",
+    "color" => "red",
+}
+
+p car
+
+p car ["wheels"]
+
+car["year"] = 2022
+p car 
+
+p "car whit symbol notation"
+
+car_symbol = {
+    "wheels": 4,
+    "brand":"Renault",
+    "color": "red",
+}
+
+
+p car_symbol
+p car_symbol[:brand]
+
+
+
+
+
+
+
+
+
+
+
 
